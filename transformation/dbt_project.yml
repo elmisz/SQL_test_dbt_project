@@ -1,3 +1,6 @@
+flags:
+  send_anonymous_usage_stats: False
+
 name: 'elastic_dbt_interview'
 version: '1.0.0'
 config-version: 2
@@ -32,6 +35,6 @@ models:
     staging:
       +schema: staging
       +materialized: view
-
+    
 vars:
   "dbt_date:time_zone": "Europe/Berlin"
